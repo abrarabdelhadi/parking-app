@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parking Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+
+  <div class="breadcrumb">
+    <a href="#">Home</a>
+    <span>›</span>
+    <span>Amman</span>
+    <span>›</span>
+    <span class="active">P2</span>
+  </div>
+
+  <!-- Title Row -->
+  <div class="title-row">
+    <h1>
+      Select Parking Spot
+      <span class="badge">Smart Parking</span>
+    </h1>
+    <p>Boulevard Parking – Amman</p>
+  </div>
+
+  <!-- Divider -->
+  <div class="header-divider"></div>
+
+</header>
+
+<div class="content">
+
+  <!-- LEFT PANEL -->
+  <aside class="details">
+    <h3>Booking Details</h3>
+
+    <div class="box">
+      <div><span>Spot Number</span><strong id="spotNum">—</strong></div>
+      <div><span>Floor</span><strong>P2</strong></div>
+      <div><span>Duration</span><strong>25 Hours</strong></div>
+      <div><span>Cost</span><strong>2.50 JOD / day</strong></div>
+    </div>
+
+    <button class="confirm">Confirm Booking & Pay</button>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <section class="parking">
+
+    <div class="top-info">
+
+      <div class="timer-wrapper">
+        <small class="timer-label">الوقت المتبقي للحجز</small>
+        <div class="timer">⏱️ <span id="time">13:59</span></div>
+      </div>
+
+      <div class="legend">
+        <div><span class="key available"></span> Available</div>
+        <div><span class="key taken"></span> Taken</div>
+        <div><span class="key selected"></span> Selected</div>
+      </div>
+    </div>
+
+    <div class="floor">Second Floor (P2)</div>
+
+    <div class="grid">
+      <div class="slot available" onclick="selectSlot(this)">A-11</div>
+      <div class="slot available" onclick="selectSlot(this)">A-12</div>
+      <div class="slot available" onclick="selectSlot(this)">A-13</div>
+      <div class="slot taken">A-14</div>
+      <div class="slot available" onclick="selectSlot(this)">A-15</div>
+      <div class="slot available" onclick="selectSlot(this)">A-16</div>
+
+      <div class="slot available" onclick="selectSlot(this)">B-11</div>
+      <div class="slot taken">B-12</div>
+      <div class="slot available" onclick="selectSlot(this)">B-13</div>
+      <div class="slot available" onclick="selectSlot(this)">B-14</div>
+      <div class="slot taken">B-15</div>
+      <div class="slot available" onclick="selectSlot(this)">B-16</div>
+    </div>
+
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

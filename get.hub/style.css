@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1b0f16, #0b070a);
+  color: #fff;
+}
+
+/* Header */
+.header {
+  padding: 25px 50px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.breadcrumb .active {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Title */
+.title-row h1 {
+  margin: 10px 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-row p {
+  color: #bbb;
+  margin: 0;
+}
+
+/* Smart Parking Badge */
+.badge {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 50px;
+  background: rgba(151, 4, 53, 0.2);
+  color: #970435;
+  border: 1px solid rgba(151, 4, 53, 0.4);
+}
+
+/* Divider */
+.header-divider {
+  margin-top: 18px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Layout */
+.content {
+  display: flex;
+  gap: 40px;
+  padding: 40px 50px;
+}
+
+/* Left panel */
+.details {
+  width: 300px;
+  background: #151015;
+  border-radius: 14px;
+  padding: 25px;
+  border: 1px solid #333;
+}
+
+.box div {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  color: #ccc;
+}
+
+/* Confirm button */
+.confirm {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: #970435;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+/* Arrow inside button */
+.confirm.active::after {
+  content: "➜";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Right panel */
+.parking {
+  flex: 1;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+/* Timer */
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timer-label {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.timer {
+  background: #1c1116;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  gap: 15px;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.key {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+.key.available {
+  border: 2px dashed #555;
+}
+
+.key.taken {
+  background: #e74c3c;
+}
+
+.key.selected {
+  background: #970435;
+}
+
+/* Floor */
+.floor {
+  margin-bottom: 15px;
+  color: #bbb;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+/* Slots */
+.slot {
+  height: 80px;
+  border-radius: 12px;
+  border: 2px dashed #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.slot:hover {
+  transform: translateY(-2px);
+}
+
+/* Taken */
+.slot.taken {
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  cursor: not-allowed;
+}
+
+/* Selected */
+.slot.selected {
+  border: 2px solid #970435;
+  color: #970435;
+}
+
+/* Check mark */
+.slot.selected::after {
+  content: "✓";
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 22px;
+  height: 22px;
+  background: #970435;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
