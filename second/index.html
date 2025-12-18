@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookings | Smart Parking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <!-- Left side -->
+    <div class="nav-left">
+        <div class="profile-circle"></div>
+
+        <nav class="nav-links">
+            <a href="#">Profile</a>
+            <a href="#">My Parking</a>
+            <a href="#" class="active">Bookings</a>
+            <a href="#">Dashboard</a>
+        </nav>
+    </div>
+
+    <!-- Right side (logo fixed) -->
+    <div class="logo">
+        Smart Parking <span class="logo-p">P</span>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="header">
+        <h1>Bookings History</h1>
+        <button class="export">⬇ Export Date</button>
+    </div>
+
+    <div class="filters">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by user name or vehicle number">
+        </div>
+
+        <div class="date-range">
+            <input type="date">
+            <input type="date">
+        </div>
+
+        <div class="buttons">
+            <button class="filter active" data-status="all">All</button>
+            <button class="filter" data-status="Completed">Completed</button>
+            <button class="filter" data-status="Pending">Pending</button>
+            <button class="filter" data-status="Canceled">Canceled</button>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Vehicle</th>
+                    <th>Status</th>
+                    <th>Amount (JD)</th>
+                    <th>From</th>
+                    <th>To</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <td>Mohammed Al Khaled</td>
+                    <td>CAR-102</td>
+                    <td><span class="status success">Completed</span></td>
+                    <td>5.00 JD</td>
+                    <td>2024-08-10</td>
+                    <td>2024-08-10</td>
+                </tr>
+                <tr>
+                    <td>Sarah Ahmad</td>
+                    <td>CAR-205</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td>7.50 JD</td>
+                    <td>2024-08-11</td>
+                    <td>2024-08-11</td>
+                </tr>
+                <tr>
+                    <td>Ahmed Hussein</td>
+                    <td>CAR-011</td>
+                    <td><span class="status canceled">Canceled</span></td>
+                    <td>3.00 JD</td>
+                    <td>2024-08-12</td>
+                    <td>2024-08-12</td>
+                </tr>
+                <tr>
+                    <td>Lina Saleh</td>
+                    <td>CAR-330</td>
+                    <td><span class="status success">Completed</span></td>
+                    <td>6.00 JD</td>
+                    <td>2024-08-13</td>
+                    <td>2024-08-13</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <button class="page-btn">‹</button>
+        <span class="page-text">Page 1 of 10</span>
+        <button class="page-btn">›</button>
+    </div>
+
+</main>
+
+<footer>
+    © 2024 Smart Parking System
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
