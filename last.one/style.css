@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f12;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #141418;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.bell {
+  font-size: 22px;
+}
+
+.dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-btn:hover {
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+}
+
+.card {
+  background: #1b1b20;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.sub {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.booking-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-box img {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  background: #e11d48;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #121216;
+  border: 1px solid #2a2a2f;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #2a2a2f;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.payment-option input {
+  width: 20px;
+  height: 20px;
+  accent-color: #e11d48;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}

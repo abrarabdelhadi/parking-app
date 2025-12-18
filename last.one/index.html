@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="left-side">
+    <div class="profile"></div>
+
+    <div class="notification" id="notification">
+      <span class="bell">🔔</span>
+      <span class="dot" id="notifyDot"></span>
+    </div>
+
+    <button class="nav-btn">Home</button>
+    <button class="nav-btn">Back</button>
+    <button class="nav-btn">Help</button>
+  </div>
+
+  <div class="logo">Smart Parking</div>
+</header>
+
+<main class="container">
+
+  <section class="card full-width">
+    <h2>Complete Your Booking</h2>
+    <p class="sub">Review your reservation details</p>
+
+    <div class="booking-box">
+      <div class="image-box">
+        <img src="image.jpg" alt="Parking Image">
+      </div>
+      <div class="booking-text">
+        <h3>Parking A-503</h3>
+        <p>Downtown Garage</p>
+        <p>12 Dec 2025 | 10:00 - 12:00</p>
+        <button>Edit Booking</button>
+      </div>
+    </div>
+  </section>
+
+  <form id="paymentForm">
+
+    <section class="full-width">
+      <h3 class="payment-title">Select Payment Method</h3>
+
+      <label class="payment-option">
+        <input type="radio" name="payment" value="wallet">
+        <span>Wallet</span>
+      </label>
+
+      <label class="payment-option">
+        <input type="radio" name="payment" value="card">
+        <span>Credit / Debit Card</span>
+      </label>
+    </section>
+
+    <section class="card full-width">
+      <h3>Card Details</h3>
+      <input id="cardName" placeholder="Card Holder Name">
+      <input id="cardNumber" placeholder="Card Number">
+      <div class="row">
+        <input id="expiry" placeholder="MM / YY">
+        <input id="cvc" placeholder="CVC">
+      </div>
+    </section>
+
+    <section class="card full-width">
+      <h3>Additional Notes</h3>
+      <textarea id="notes" placeholder="Add any notes or instructions here..."></textarea>
+    </section>
+
+    <button type="submit" class="pay-btn full-width">Confirm Reservation</button>
+  </form>
+
+</main>
+
+<footer class="footer">© 2025 Smart Parking</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
